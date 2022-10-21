@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend Deca", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+/*Variables*/
+:root {
+  --Brightorange: hsl(31, 77%, 52%);
+  --Darkcyan: hsl(184, 100%, 22%);
+  --Verydarkcyan: hsl(179, 100%, 13%);
+  --Transparentwhite: hsla(0, 0%, 100%, 0.75);
+  --Verylightgraybackground: hsl(0, 0%, 95%);
+}
+body {
+  background-color: var(--Verylightgraybackground);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+.div-first {
+  background-color: var(--Brightorange);
+  border-bottom-left-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+}
+h1 {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+  color: var(--Verylightgraybackground);
+}
+.image {
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+p {
+  padding-left: 3rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 3rem;
+  line-height: 2.5rem;
+  color: var(--Transparentwhite);
+}
+h2 {
+  margin-left: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.div-second {
+  background-color: var(--Darkcyan);
+}
+.btn-1 {
+  padding-left: 0.4rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Brightorange);
+  border: none;
+  padding-right: 0.4rem;
+  width: 55%;
+}
+.btn-2 {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Darkcyan);
+  border: none;
+  width: 50%;
+}
+.div-third {
+  background-color: var(--Verydarkcyan);
+  border-bottom-right-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+}
+.btn-3 {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  background-color: var(--Verylightgraybackground);
+  color: var(--Darkcyan);
+  border: none;
+  width: 50%;
+}
+/* button hover effect */
+.btn-1:hover {
+  background-color: var(--Brightorange);
+  color: var(--Transparentwhite);
+  border: 2px solid var(--Transparentwhite);
+}
+.btn-2:hover {
+  background-color: var(--Darkcyan);
+  color: var(--Transparentwhite);
+  border: 2px solid var(--Transparentwhite);
+}
+.btn-3:hover {
+  background-color: var(--Verydarkcyan);
+  color: var(--Transparentwhite);
+  border: 2px solid var(--Transparentwhite);
+}
+/* media responsiveness for mobile and desktop */
+@media screen and (max-width: 930px) {
+  body {
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+  }
+
+  .div-1 {
+    border-top-right-radius: 0.6rem;
+    border-top-left-radius: 0.6rem;
+    border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+  }
+  .div-3 {
+    background-color: var(--Verydarkcyan);
+    border-top-right-radius: 0rem;
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+  }
+  p {
+    line-height: 3.5rem;
+    font-size: 2rem;
+  }
+  h2 {
+    margin-left: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  .btn-1 {
+    padding-top: 1.4rem;
+    padding-bottom: 1.3rem;
+    border-radius: 6rem;
+    width: 40%;
+    font-size: 1rem;
+  }
+
+  .btn-2 {
+    padding-top: 1.4rem;
+    padding-bottom: 1.3rem;
+    border-radius: 6rem;
+    width: 40%;
+    font-size: 1rem;
+  }
+  .btn-3 {
+    padding-top: 1.4rem;
+    padding-bottom: 1.3rem;
+    border-radius: 6rem;
+    width: 40%;
+    font-size: 1rem;
+  }
+}
