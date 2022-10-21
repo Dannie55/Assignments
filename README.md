@@ -1,9 +1,9 @@
 
-# Zuri's Internship Assigments
+# Ezirim Daniel
 
 This project is on designing simple portfolio websites, flexbox layout and gridlayout by making use of HTML and CSS
 ## 🚀 About Me
-I'm a Software developer...
+Hi 👋 I'm a Software developer...
 
 
 ## 🔗 Links
